@@ -1,0 +1,65 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.timeline-content {
+    flex: 1;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: scale(1.05);
+}
+
+.timeline-date {
+    flex: 1;
+    text-align: right;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color: #fff;
+}
+
+@media (max-width: 640px) {
+    .timeline-item {
+        flex-direction: column;
+    }
+
+    .timeline-date {
+        text-align: left;
+        margin-bottom: 0.5rem;
+    }
+
+    .timeline-line {
+        left: 1rem;
+    }
+}
+
+#contactBtn {
+    transition: transform 0.3s ease;
+}
+
+#contactBtn:hover {
+    transform: scale(1.1);
+}
+
+#contactInfo p {
+    margin-bottom: 0.5rem;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body class="bg-black text-white">
+    <div
+      id="welcome"
+      class="h-screen flex flex-col justify-center items-center"
+    >
+      <h1
+        class="text-4xl md:text-6xl font-bold mb-4 animate__animated animate__fadeIn"
+      >
+        Welcome
+      </h1>
+      <p
+        class="text-xl md:text-2xl animate__animated animate__fadeIn animate__delay-1s"
+      >
+        to MING LIN'S personal website
+      </p>
+    </div>
+
+    <div id="timeline" class="min-h-screen py-16 px-4">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">Timeline</h2>
+      <div id="timeline-container" class="relative"></div>
+    </div>
+
+    <div id="content" class="min-h-screen py-16 px-4">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">Content</h2>
+      <div class="max-w-3xl mx-auto">
+        <p class="mb-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui
+          mauris.
+        </p>
+        <img
+          src="https://via.placeholder.com/800x400"
+          alt="Placeholder image"
+          class="w-full mb-4 rounded-lg"
+        />
+        <p class="mb-4">
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+          posuere cubilia curae; Proin vel ante a orci tempus eleifend ut et
+          magna.
+        </p>
+      </div>
+    </div>
+
+    <div
+      id="contact"
+      class="min-h-screen flex flex-col justify-center items-center"
+    >
+      <h2 class="text-3xl md:text-4xl font-bold mb-8">Contact Me</h2>
+      <button
+        id="contactBtn"
+        class="bg-white text-black px-6 py-3 rounded-full font-bold hover:bg-gray-200 transition duration-300"
+      >
+        Show Contact Info
+      </button>
+      <div id="contactInfo" class="mt-8 text-center hidden">
+        <p class="animate__animated animate__fadeIn">
+          EMAIL: emmalin0511@outlook.com(for work)
+        </p>
+        <p class="animate__animated animate__fadeIn animate__delay-1s">
+          EMAIL: 1305933255@qq.com(optional)
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="timeline.js"></script>
+  </body>
+</html>
